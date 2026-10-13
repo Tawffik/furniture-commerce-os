@@ -23,6 +23,8 @@ jobs:
         with:
           node-version: '20'
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - run: npm install
       - run: npm test
       - run: npm run build
